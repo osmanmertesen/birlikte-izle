@@ -1,0 +1,47 @@
+BİRLİKTE İZLE - Mac kurulumu (bir kez yapılır)
+================================================
+
+1) Bu zip dosyasını çift tıklayıp aç. "birlikte-izle" adlı bir klasör çıkacak.
+   Klasörü kalıcı bir yere taşı (örneğin Belgeler). SİLME: eklenti bu klasörden çalışır.
+
+2) Google Chrome'u aç, adres çubuğuna yaz:  chrome://extensions
+
+3) Sağ üstteki "Geliştirici modu" anahtarını AÇ.
+
+4) Sol üstte "Paketlenmemiş öğe yükle" düğmesine bas ve "birlikte-izle" klasörünü seç.
+
+5) Sağ üstteki yapboz (🧩) simgesine tıkla, "Birlikte İzle"nin yanındaki raptiyeye bas.
+   Artık araç çubuğunda duracak.
+
+KULLANIM
+--------
+0) (İsteğe bağlı, bir kez) Başka video sitelerinde de kullanmak için panelde
+   "🌐 Tüm sitelerde çalıştır"a bas ve Chrome'un sorduğu izne "İzin ver" de.
+1) Netflix / Prime Video / TOD / YouTube'da (ya da başka bir video sitesinde) aynı filmi aç.
+2) Araç çubuğundaki Birlikte İzle simgesine tıkla (ya da Option+B), sağda bir panel açılır.
+3) Sunucu adresi zaten dolu, dokunma. Adını yaz, sana gönderilen ODA KODUNU yaz, "Bağlan".
+4) Biriniz oynatınca/durdurunca/sarınca diğerinde de aynısı olur.
+5) Sesli konuşma: "Mikrofonu aç". İlk seferde bir izin sekmesi açılır:
+   "İzin ver"e bas, sekmeyi kapat, tekrar "Mikrofonu aç".
+   Mac ayrıca "Chrome mikrofona erişmek istiyor" diye sorarsa İzin Ver de
+   (Sistem Ayarları > Gizlilik ve Güvenlik > Mikrofon > Google Chrome açık olmalı).
+6) Mikrofonu açtıktan sonra "Ortam sesini ölç"e bas ve 3 saniye sessiz kal.
+7) Kulaklık kullanın, yoksa film sesi karşıya geri gider.
+
+TAM EKRAN
+---------
+- Videoyu tam ekran yapınca panel kendiliğinden gizlenir; senkron, mesajlar ve
+  sesli sohbet çalışmaya devam eder (mesajlar videonun üstünde görünür).
+- Paneli geri açmak için: Option+B ya da araç çubuğundaki simge.
+  Panel kapatılıp açılsa da sohbet geçmişi ve bağlantı kaybolmaz.
+
+SORUN OLURSA
+------------
+- "Oynatmak için videoya bir kez tıkla" yazarsa: videoya bir kez tıkla.
+- Ses boğuk gelirse: "Tarayıcının gürültü engellemesi" kutusunu kapat.
+- Başka bir sitede video algılanmazsa: sayfayı yenile, sonra panelde "📺 Bu sekmeyi bağla".
+- Oda kodunu sadece birbirinize gönderin (🎲 ile üretilen kod güvenlidir).
+- Sesler gitmezse: ikinizin de eklentisi aynı sürüm olmalı (chrome://extensions'ta
+  sürüm numarasına bakın).
+- Güncelleme gelince: klasörü yenisiyle değiştir, chrome://extensions sayfasında
+  Birlikte İzle kartındaki yenile (🔄) simgesine bas.

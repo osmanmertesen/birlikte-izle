@@ -1,0 +1,25 @@
+# Gizli / kişisel ayarlar
+.env
+.env.*
+!.env.example
+extension/config.js
+
+# Üretilenler
+dagitim/
+node_modules/
+relay/.wrangler/
+.wrangler/
+
+# Test çıktıları
+test/profile-*/
+test/*.wav
+test/ext-*/
+*.log
+.DS_Store
+Thumbs.db
+
+# Claude'un kişisel notları
+CLAUDE.local.md
+
+# Claude çalışma notları (kişisel ayrıntı içerir)
+CLAUDE.md

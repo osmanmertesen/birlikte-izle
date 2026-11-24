@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Birlikte İzle</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header>
+    <h1>🍿 Birlikte İzle</h1>
+    <span id="dot" class="dot off" title="Bağlantı"></span>
+  </header>
+
+  <section id="setup">
+    <label>Sunucu <input id="server" placeholder="wss://birlikte-izle-relay.<hesabın>.workers.dev"></label>
+    <label>Adın <input id="name" maxlength="24" placeholder="Adın"></label>
+    <label>Oda kodu
+      <div class="row"><input id="room" placeholder="ikinizde aynı olmalı"><button id="newRoom" class="ghost" title="Rastgele kod üret">🎲</button></div>
+    </label>
+    <button class="allSitesBtn ghost">🌐 Tüm sitelerde çalıştır</button>
+    <button id="connect" class="primary">Bağlan</button>
+  </section>
+
+  <section id="live" hidden>
+    <div class="status">
+      <div id="peers">Karşı taraf bekleniyor…</div>
+      <div id="meta" class="muted"></div>
+    </div>
+    <div id="mismatch" class="warn" hidden>
+      <span id="mmText"></span>
+      <button id="mmOpen" class="primary">Onun videosunu aç</button>
+    </div>
+    <div class="row">
+      <button id="bind" class="ghost" title="Şu an açık olan sekmeyi senkrona bağla">📺 Bu sekmeyi bağla</button>
+      <button id="syncNow" class="ghost" title="Benim konumuma eşitle">🔄 Eşitle</button>
+    </div>
+    <button class="allSitesBtn ghost">🌐 Tüm sitelerde çalıştır</button>
+    <div class="row">
+      <button id="mic" class="ghost">🎤 Mikrofonu aç</button>
+      <label class="vol" title="Karşı tarafın sesi (3x'e kadar)">🔊 <input id="vol" type="range" min="0" max="3" step="0.1" value="1"></label>
+    </div>
+    <div class="audio-settings">
+      <label class="slider">Mikrofon gücü <span id="gainVal">1.5x</span>
+        <input id="gain" type="range" min="1" max="4" step="0.1" value="1.5">
+      </label>
+      <label class="slider">Gürültü eşiği <span id="gateVal">-50 dB</span>
+        <input id="gate" type="range" min="-80" max="-20" step="1" value="-50">
+      </label>
+      <div class="meter" title="Mikrofon seviyesi. Beyaz çizgi = eşik; altındaki sesler iletilmez.">
+        <div id="meterBar"></div><div id="gateMark"></div>
+      </div>
+      <div class="row between">
+        <span id="gateState" class="muted"></span>
+        <button id="calibrate" class="ghost small">🎚 Ortam sesini ölç</button>
+      </div>
+      <label class="check"><input type="checkbox" id="ai" checked> 🤖 Yapay zekâ gürültü engelleme <span class="muted">(fan, klavye, trafik)</span></label>
+      <label class="check"><input type="checkbox" id="ns" checked> Tarayıcının gürültü engellemesi <span class="muted">(boğuk gelirse kapat)</span></label>
+    </div>
+    <div id="voiceInfo" class="muted"></div>
+
+    <div id="chat"></div>
+    <div class="reactions">
+      <button data-e="❤️">❤️</button><button data-e="😂">😂</button><button data-e="😮">😮</button>
+      <button data-e="😢">😢</button><button data-e="👏">👏</button><button data-e="🔥">🔥</button>
+    </div>
+    <form id="chatForm" class="row">
+      <input id="chatInput" placeholder="Mesaj yaz…" autocomplete="off" maxlength="500">
+      <button class="primary">Gönder</button>
+    </form>
+    <button id="disconnect" class="link">Bağlantıyı kes</button>
+  </section>
+
+  <script src="config.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

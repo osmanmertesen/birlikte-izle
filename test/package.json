@@ -1,0 +1,1 @@
+{ "type": "module", "private": true, "scripts": { "test": "node e2e.mjs" }, "devDependencies": { "playwright": "1.49.1", "ws": "8.18.0" } }

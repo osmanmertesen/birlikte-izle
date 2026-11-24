@@ -1,0 +1,1 @@
+Kaynak: @sapphi-red/web-noise-suppressor 0.4.1 (MIT, LICENSE). Icindeki WASM: @shiguredo/rnnoise-wasm 2022.2.0 (Apache-2.0, Shiguredo Inc.), RNNoise (Xiph/Mozilla, BSD-3). Dosyalar degistirilmeden kopyalandi.
